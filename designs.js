@@ -10,9 +10,9 @@ document.addEventListener('submit', function makeGrid(event) {
   const col = document.getElementById('input_width').value;
 
   for (let i = 0; i < row; i++){
-    document.getElementById('pixel_canvas').appendChild(document.createElement('tr'))
+    document.getElementById('pixel_canvas').appendChild(document.createElement('tr'));
     for (let o = 0; o < col; o++){
-
+      document.getElementById('pixel_canvas').lastChild.appendChild(document.createElement('td'));
     }
   }
-})
+});
