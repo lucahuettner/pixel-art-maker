@@ -1,11 +1,10 @@
 // Select color input
-let color = document.getElementById('colorPicker')
+let color = document.getElementById('colorPicker');
 // Select size input
 
 // When size is submitted by the user, call makeGrid()
 
 function makeGrid() {
-
-// Your code goes here!
-
+  const row = getElementById('input_height').value;
+  const col = getElementById('input_width').value;
 }
