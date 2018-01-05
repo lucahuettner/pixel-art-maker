@@ -1,4 +1,5 @@
 // Select color input
+let color = document.getElementById('colorPicker')
 // Select size input
 
 // When size is submitted by the user, call makeGrid()
