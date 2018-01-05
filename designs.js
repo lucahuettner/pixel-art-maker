@@ -8,4 +8,11 @@ document.addEventListener('submit', function makeGrid(event) {
   event.preventDefault();
   const row = document.getElementById('input_height').value;
   const col = document.getElementById('input_width').value;
+
+  for (let i = 0; i < row; i++){
+    document.getElementById('pixel_canvas').appendChild(document.createElement('tr'))
+    for (let o = 0; o < col; o++){
+
+    }
+  }
 })
