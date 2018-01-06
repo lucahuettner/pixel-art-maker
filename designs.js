@@ -15,9 +15,9 @@ document.addEventListener('submit', function makeGrid(event) {
 
   // create canvas
   for (let i = 0; i < row; i++){
-    document.getElementById('pixel_canvas').appendChild(document.createElement('tr'));
+    canvas.appendChild(document.createElement('tr'));
     for (let o = 0; o < col; o++){
-      document.getElementById('pixel_canvas').lastChild.appendChild(document.createElement('td'));
+      canvas.lastChild.appendChild(document.createElement('td'));
     }
   }
 });
