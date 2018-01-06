@@ -11,6 +11,7 @@ document.addEventListener('submit', function makeGrid(event) {
   // getting canvas height and width
   const row = document.getElementById('input_height').value;
   const col = document.getElementById('input_width').value;
+  const canvas = document.getElementById('pixel_canvas');
 
   // create canvas
   for (let i = 0; i < row; i++){
