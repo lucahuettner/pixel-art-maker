@@ -3,7 +3,7 @@ let color = document.getElementById('colorPicker');
 // Select canvas
   const canvas = document.getElementById('pixel_canvas');
 // When size is submitted by the user, call makeGrid()
-document.addEventListener('submit', function makeGrid(event) {
+document.getElementById('sizePicker').addEventListener('submit', function makeGrid(event) {
 
   // preventing that site is reloaded on submit
   event.preventDefault();
@@ -14,7 +14,7 @@ document.addEventListener('submit', function makeGrid(event) {
 
   // clear canvas
   while (canvas.firstChild) {
-    canvas.removeChild(canvas.firstChild)
+    canvas.removeChild(canvas.firstChild);
   }
 
   // create canvas
