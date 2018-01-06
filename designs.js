@@ -1,7 +1,7 @@
 // Select color input
 let color = document.getElementById('colorPicker');
-// Select size input
-
+// Select canvas
+  const canvas = document.getElementById('pixel_canvas');
 // When size is submitted by the user, call makeGrid()
 document.addEventListener('submit', function makeGrid(event) {
 
@@ -11,7 +11,6 @@ document.addEventListener('submit', function makeGrid(event) {
   // getting canvas height and width
   const row = document.getElementById('input_height').value;
   const col = document.getElementById('input_width').value;
-  const canvas = document.getElementById('pixel_canvas');
 
   // clear canvas
   while (canvas.firstChild) {
