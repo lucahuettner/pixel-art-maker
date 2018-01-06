@@ -13,6 +13,10 @@ document.addEventListener('submit', function makeGrid(event) {
   const col = document.getElementById('input_width').value;
   const canvas = document.getElementById('pixel_canvas');
 
+  // clear canvas
+  while (canvas.firstChild) {
+    canvas.removeChild(canvas.firstChild)
+  }
   // create canvas
   for (let i = 0; i < row; i++){
     canvas.appendChild(document.createElement('tr'));
