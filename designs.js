@@ -27,3 +27,7 @@ document.getElementById('sizePicker').addEventListener('submit', function makeGr
     }
   }
 });
+// draw on canvas
+canvas.addEventListener('click', function draw(evt){
+  evt.target.style.backgroundColor = color.value;
+})
